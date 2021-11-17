@@ -5,12 +5,11 @@
     <main class="content container">
     <ProductList>
     </ProductList>
-    </main>
     <Cart>
     </Cart>
+    </main>
   </div>
 </template>
-
 <script>
 
 import ProductList from "./components/productList/ProductList";

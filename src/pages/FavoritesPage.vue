@@ -1,1 +1,0 @@
-<template></template><script>export default {  name: "FavoritesPage"}</script><style scoped></style>

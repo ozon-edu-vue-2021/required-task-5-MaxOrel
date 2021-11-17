@@ -1,1 +1,1 @@
-<template>  <div @click="resetCartTitle">    Cart: {{getTitleNew}}  </div></template><script>import {mapState, mapGetters, mapMutations} from 'vuex';export default {  name: "Cart",  computed: {    ...mapState(['productData']),    ...mapGetters(['getTitleNew']),  },  methods: {    ...mapMutations({resetCartTitle: 'resetTitle'}),  }}</script><style scoped></style>
+<template>  <div >  </div></template><script>export default {  name: "Cart",  computed: {  },  methods: {  }}</script><style scoped></style>

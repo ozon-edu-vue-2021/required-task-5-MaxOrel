@@ -1,0 +1,1 @@
+export default {    PRODUCTS(state) {        return state.productData;    },    CART(state) {        return state.cart;    }}

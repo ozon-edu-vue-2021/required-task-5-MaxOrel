@@ -1,0 +1,1 @@
+export default {    ADD_TO_CART({commit}, payload) {        commit('SET_CART', payload)    },    DELETE_FROM_CART({commit}, index) {        commit('REMOVE_FROM_CART', index)    },    INCREMENT_CART_ITEM({commit}, productId){        commit('INCREMENT', productId);    },    DECREMENT_CART_ITEM({commit}, productId){        commit('DECREMENT', productId);    },}

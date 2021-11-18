@@ -2,25 +2,23 @@
   <div id="app">
     <Header>
     </Header>
-    <main class="content container">
-    <ProductList>
-    </ProductList>
-    <Cart>
-    </Cart>
+    <main class="content">
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
     </main>
   </div>
 </template>
 <script>
 
-import ProductList from "./components/productList/ProductList";
-import Cart from "./components/cart/Cart";
 import Header from "./components/header/Header";
+
 export default {
   name: "App",
   components: {
     Header,
-    Cart,
-    ProductList
+  },
+  computed: {
   },
 };
 </script>
@@ -28,6 +26,7 @@ export default {
 <style>
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -44,6 +43,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 24px;
+  height: 100%;
+}
+#app {
+  height: 100%;
 }
 
 .container {
@@ -54,7 +57,7 @@ body {
 
 @media screen and (min-width: 1150px) {
   .container {
-    max-width: 1200px;
+    max-width: 1280px;
   }
 }
 
@@ -97,5 +100,7 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.content {
+  height: 100%;
+}
 </style>

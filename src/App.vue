@@ -103,4 +103,35 @@ input[type="radio"].visually-hidden {
 .content {
   height: 100%;
 }
+
+.section-title {
+  display: block;
+  font-size: 20px;
+  line-height: 1.43;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.button {
+  width: 100%;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+
+.button_type_primary {
+  background: #4faa51;
+  color: #fff;
+}
+
+.button_type_secondary {
+  border: 1px solid #4faa51;
+}
+
+.button_width_inner {
+  width: max-content;
+  display: inline-block;
+}
 </style>

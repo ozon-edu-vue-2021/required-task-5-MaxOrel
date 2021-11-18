@@ -1,1 +1,1 @@
-export default {    PRODUCTS(state) {        return state.productData;    },    CART(state) {        return state.cart;    }}
+export default {    PRODUCTS(state) {        return state.productData;    },    CART(state) {        return state.cart;    },    FAVORITES(state) {        return state.productData.filter(item=>item.favorites);    },}
